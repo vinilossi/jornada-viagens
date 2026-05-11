@@ -6,17 +6,24 @@
   box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 12px;
 }
 
 .card header {
   display: block;
   position: static;
+  padding: 0;
 }
 
 .card p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
+
 .card header h3 {
   font-size: 40px;
   margin: 8px 0 0;
@@ -27,4 +34,36 @@
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
+}
+
+.button {
+  width: 288px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--button-background-color);
+  border-radius: 16px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+
+  .card header h3 {
+    font-size: 48px;
+  }
+
+  .card header span {
+    font-size: 40px;
+  }
+
+  .button:hover {
+    background-color: var(--button-hover-color);
+  }
 }
