@@ -27,6 +27,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
+  text-decoration: none;
 }
 
 body {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .section-title h2 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: var(--title-weight);
   margin-top: 88px;
   text-align: center;
