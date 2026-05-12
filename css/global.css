@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
@@ -10,8 +9,8 @@
   --background-primary-color: #ffffff;
   --background-header-color: #000000;
   --background-card-color: #f5f5f5;
-  --background-button-color: #8f0101;
-  --button-hover-color: #b81515;
+  --button-hover-color: #8f0101;
+  --button-background-color: #b81515;
   --text-main-color: #222222;
   --text-secondary-color: #ffffff;
   --text-header-color: #ffffff;
@@ -26,10 +25,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;;
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
+}
+
+body {
+  color: var(--text-main-color);
 }
 
 h1 {
   font-weight: var(--title-weight);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin-top: 88px;
+  text-align: center;
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-hover-color);
+  border: none;
+  margin: 16px auto 32px auto;
+}
+
+.button {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--button-background-color);
+  border-radius: 16px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    width: 312px;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover-color);
+  }
 }
