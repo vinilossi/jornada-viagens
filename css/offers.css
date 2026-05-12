@@ -1,6 +1,5 @@
 .card {
   color: var(--text-secondary-color);
-  background-color: black;
   width: 312px;
   height: 288px;
   box-sizing: border-box;
@@ -12,11 +11,21 @@
   align-items: center;
   padding: 32px 12px;
 }
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+  width: 100%;
+}
 
 .card header {
   display: block;
   position: static;
   padding: 0;
+  background-color: transparent;
 }
 
 .card p {
@@ -36,22 +45,49 @@
   display: inline-block;
 }
 
-.button {
-  width: 288px;
-  height: 64px;
-  color: var(--text-secondary-color);
-  font-weight: var(--title-weight);
-  font-size: 20px;
-  background-color: var(--button-background-color);
-  border-radius: 16px;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 64px;
+.card.japan {
+  background-image: url(../assets/Japan-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card.san-andreas {
+  background-image: url(../assets/San-andreas-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card.paraiba {
+  background-image: url(../assets/Paraiba-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card.manaus {
+  background-image: url(../assets/Manaus-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 984px) {
+  .offers-cards {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 588px;
+    width: 458px;
     height: 308px;
   }
 
@@ -62,8 +98,14 @@
   .card header span {
     font-size: 40px;
   }
+}
 
-  .button:hover {
-    background-color: var(--button-hover-color);
-  }
+@media screen and (min-width: 1440px) {
+  .card {
+  width: 588px;
+}
+
+.offers-cards {
+  width: 1220px;
+}
 }
