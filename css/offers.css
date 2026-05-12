@@ -46,25 +46,25 @@
 }
 
 .card.japan {
-  background-image: url(../assets/Japan-mobile.jpg);
+  background-image: url(../assets/Japan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card.san-andreas {
-  background-image: url(../assets/San-andreas-mobile.jpg);
+  background-image: url(../assets/San-andreas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card.paraiba {
-  background-image: url(../assets/Paraiba-mobile.jpg);
+  background-image: url(../assets/Paraiba.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card.manaus {
-  background-image: url(../assets/Manaus-mobile.jpg);
+  background-image: url(../assets/Manaus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
