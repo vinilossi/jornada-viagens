@@ -25,10 +25,13 @@
   line-height: 32px;
 }
 
+.item.jap a {
+    margin-bottom: 40px;
+}
+
 .item a {
   text-align: center;
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .item footer {
