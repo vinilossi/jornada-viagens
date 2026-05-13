@@ -34,6 +34,10 @@ body {
   color: var(--text-main-color);
 }
 
+.section {
+  width: 312px;
+}
+
 h1 {
   font-weight: var(--title-weight);
 }
