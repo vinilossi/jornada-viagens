@@ -57,6 +57,19 @@ h1 {
   margin: 16px auto 32px auto;
 }
 
+.content-title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  width: 220px;
+  margin: 0 auto;
+}
+
+.content-text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+
 .button {
   width: 280px;
   height: 64px;
@@ -73,6 +86,13 @@ h1 {
 @media screen and (min-width: 768px) {
   .section-title h2 {
     font-size: 32px;
+  }
+
+  .content-title {
+    font-size: 28px;
+    font-weight: var(--title-weight);
+    width: auto;
+    margin: 0 auto;
   }
 }
 
