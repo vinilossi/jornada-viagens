@@ -73,7 +73,13 @@
     .destination-items {
         display: flex;
         flex-direction: row;
-        width: 1320px;
+        width: 940px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1415px) {
+    .destination-items {
+        width: 1320px;
     }
 }

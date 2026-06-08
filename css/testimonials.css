@@ -1,0 +1,80 @@
+/* Bloqueia o vazamento de margens gigantes do ficheiro header.css */
+.testimonials header {
+    background-color: transparent;
+    padding: 0 !important; 
+    width: 100%;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.testimonials article {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.testimonials p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0; 
+    margin-bottom: 16px;
+}
+
+.testimonials footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 0; 
+    width: 100%;
+}
+
+.testimonials img {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%; 
+}
+
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonials h4 {
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    margin: 0;
+}
+
+.rating {
+    color: var(--button-background-color);
+    font-size: 35px;
+    line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials article {
+        width: 650px; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .testimonials article {
+        width: 384px; 
+    }
+}
