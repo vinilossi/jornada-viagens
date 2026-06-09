@@ -1,0 +1,93 @@
+.footer-img {
+  height: 400px;
+  width: 100%;
+  margin-top: 88px;
+  background: url(../assets/rodape.jpg) no-repeat;
+  background-size: cover;
+}
+
+.footer-container {
+  background-color: var(--background-header-color);
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 16px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 24px;
+}
+
+.logo-footer {
+  width: 162px;
+  margin: 32px 75px 16px;
+}
+
+.footer-text {
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: var(--text-weight);
+  margin: 16px 24px 8px;
+}
+
+.social-text {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-img {
+    height: 620px;
+    background: url(../assets/rodape.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1415px) {
+  .footer-img {
+    height: 620px;
+    background: url(../assets/Hero-footer-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .logo-footer {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .footer-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-legend {
+      margin: 52px 120px;
+  }
+
+  .social {
+    margin-right: 120px;
+    width: 165px;
+  }
+
+  .social-text {
+    font-size: 16px;
+    text-align: center;
+  }
+}
